@@ -1443,6 +1443,25 @@ var currentScrollPos = window.pageYOffset;
 </div> <div class="preloader-content"> <img class="preloader-custom-img" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="wp-content/uploads/2022/06/ff-logo.png"/><noscript><img class="preloader-custom-img" src="wp-content/uploads/2022/06/ff-logo.png"/></noscript>
 </div>
 </div>
+</div>
+<div class="preloader-content">
+  <img class="preloader-custom-img" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="wp-content/uploads/2022/06/ff-logo.png"/>
+  <noscript><img class="preloader-custom-img" src="wp-content/uploads/2022/06/ff-logo.png"/></noscript>
+</div>
+</div>
+
+<!-- ✨ Start of New Section ✨ -->
+<section id="future-forum" style="padding: 40px 20px; max-width: 800px; margin: auto; font-size: 16px; line-height: 1.6;">
+  <p>Future Forum is a special program hosted by the non-profit Foresight Institute.</p>
+  <p>As part of Foresight’s mission to advance technologies that benefit humanity, it sponsored Future Forum to convene 300 scientists, founders, and policy thinkers in San Francisco (Aug 4–7, 2022). Isaak Freeman served as the Executive Director for Future Forum while on fellowship at Foresight, leading strategic oversight, team building, day-to-day design and execution. We're grateful to Foresight for incubating this project.</p>
+</section>
+<!-- ✨ End of New Section ✨ -->
+
+<!-- Existing scripts follow -->
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+...
+</script>
+
 <script type="text/javascript" id="rocket-browser-checker-js-after">
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 </script>
